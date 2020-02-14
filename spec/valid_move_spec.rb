@@ -1,4 +1,4 @@
-#require_relative './spec_helper.rb'
+require_relative './spec_helper.rb'
 
 describe './lib/valid_move.rb' do
   it 'returns true for a valid position on an empty board' do
