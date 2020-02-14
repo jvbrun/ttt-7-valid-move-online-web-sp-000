@@ -5,6 +5,8 @@ require_relative '../spec/valid_move_spec.rb'
 def valid_move?(board, index)
   if board[index] == "X" || board[index] == "O"
     false 
+    elsif board[index] == " " || board[index] == ""
+    true 
   end
 end  
 
