@@ -1,4 +1,4 @@
-#require_relative '../spec/spec_helper.rb'
+require_relative '../spec/spec_helper.rb'
 
 # code your #valid_move? method here
 def valid_move?(board, index)
@@ -14,6 +14,3 @@ def position_taken?(board, index)
   end
 end 
 
-def make_a_move(position_taken, valid_move)
-  if valid_move 
-end
