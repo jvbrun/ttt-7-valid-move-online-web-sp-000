@@ -38,11 +38,21 @@ end
 #end
 
 def valid_move?(board, index)
-  valid_position = index.between(0, 8)
+  on_board = index.between(0, 8)
+  off_board != index.between(0, 8)
+  space_taken_by_X = board[index] == "X"
+  space_taken_by_O = board[index] == "O"
+  space_not_taken_by_X = board[index] == " "
+  space_not_taken_by_O 
   
-  if valid_position && board[index] != "X"
-    elsif valid_position && board[index] != "O"
-    
+  if off_board
+      false 
+    elsif on_board && space_taken_by_X
+      false
+    elsif on_board && space_taken_by_O
+      false 
+    elsif on_board && 
+      false 
 end
 
   
