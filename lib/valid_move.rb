@@ -4,6 +4,7 @@ require_relative '../spec/spec_helper.rb'
 
 def valid_move?(board, index)
   if board[index] == " " || baord[index] == ""
+    true
 end 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
