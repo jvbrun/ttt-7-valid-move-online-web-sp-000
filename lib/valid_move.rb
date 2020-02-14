@@ -43,7 +43,7 @@ def valid_move?(board, index)
   space_taken_by_X = board[index] == "X"
   space_taken_by_O = board[index] == "O"
   space_not_taken_by_X = board[index] == " "
-  space_not_taken_by_O 
+  space_not_taken_by_O = board[index] == ""
   
   if off_board
       false 
@@ -51,8 +51,11 @@ def valid_move?(board, index)
       false
     elsif on_board && space_taken_by_O
       false 
-    elsif on_board && 
-      false 
+    elsif on_board && space_not_taken_by_X
+      true
+    elsif on_board && space_not_taken_by_O
+      true
+  else nil
 end
 
   
