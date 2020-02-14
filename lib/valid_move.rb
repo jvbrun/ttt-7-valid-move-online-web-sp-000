@@ -37,5 +37,12 @@ end
 #  end
 #end
 
+def valid_move?(board, index)
+  valid_position = index.between(0, 8)
+  
+  if valid_position && board[index] != "X"
+    elsif valid_position && board[index] != "O"
+    
+end
 
   
