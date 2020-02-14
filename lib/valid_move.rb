@@ -1,4 +1,4 @@
-require_relative '../spec/spec_helper.rb'
+#require_relative '../spec/spec_helper.rb'
 require_relative '../spec/valid_move_spec.rb'
 
 # code your #valid_move? method here
